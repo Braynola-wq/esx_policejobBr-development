@@ -1,7 +1,6 @@
 -- Server-side logic for Esx_policejob2
 
-ESX = nil
-TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
+ESX = exports["es_extended"]:getSharedObject()
 
 -- Add server-side event handlers, functions, and callbacks here.
 -- We will populate this file further as we refactor the client scripts
